@@ -2,10 +2,6 @@
 
 This repository contains a Python script that backtests the famous **Turtle Trading strategy** on historical stock data. The script uses `yfinance` to fetch data, `pandas` and `numpy` for data manipulation and calculations, and `matplotlib` to visualize the results.
 
-📈 The strategy is tested on Meta Platforms, Inc. (ticker: `META`).
-
-![Turtle Trading System Backtest for META](https://github.com/user-attachments/assets/b6a71ab1-b552-47de-af4c-68788e0e37d5)
-
 ---
 
 ## 🧠 What is the Turtle Trading Strategy?
