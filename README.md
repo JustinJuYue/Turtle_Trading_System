@@ -56,4 +56,12 @@ entry_period = 20          # Lookback period for the entry high
 exit_period = 10           # Lookback period for the exit low
 atr_period = 20            # ATR (N-Value) calculation period
 max_units = 4              # Max number of units to pyramid into a position
+```
+## ⚠️ Disclaimer
+
+This script is intended for educational and informational purposes only.
+The trading signals generated are based on a simplistic technical analysis strategy and should not be considered financial advice.
+Trading involves risk, and you should do your own research or consult a licensed financial advisor before making any investment decisions.
+
+
 
