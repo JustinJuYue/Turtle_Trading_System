@@ -14,7 +14,7 @@ max_units = 4            # Maximum number of units to hold in a position
 
 # --- Data Fetching ---
 # Using a longer timeframe for a more stable ATR calculation
-start = dt.datetime.now() - dt.timedelta(days=365*5)
+start = dt.datetime.now() - dt.timedelta(days=365)
 end = dt.datetime.now()
 
 # Download the stock data
@@ -58,6 +58,7 @@ for i in range(len(data)):
 
     # Entry Logic (if we are flat / have no position)
     if units_held == 0:
+        print(f"DEBUG: Comparing type {type(current_price)} with type {type(data['entry_high'].iloc[i])}")
         if current_price > data['entry_high'].iloc[i]:
             # Buy 1 unit
             position_size_shares = unit_size_shares
@@ -126,6 +127,4 @@ ax2.set_xlabel('Date')
 ax2.set_title('Equity Curve')
 ax2.legend(loc='upper left')
 
-# Save and show the plot
-plt.savefig('turtle_system_backtest.png')
 plt.show()
